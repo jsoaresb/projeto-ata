@@ -1,0 +1,59 @@
+<header>
+    <div class="nav-container">
+      <!-- Esquerda -->
+      <div class="left-header">
+        <h2>Projeto Ata</h2>
+      </div>
+  
+      <!-- Centro: navegação -->
+      <nav class="nav-menu">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
+        <a routerLink="/mensagens" routerLinkActive="active">Mensagens</a>
+        <a routerLink="/atas" routerLinkActive="active">Atas</a>
+        <a routerLink="/ala" routerLinkActive="active">Ala</a>
+      </nav>
+  
+      <!-- Reservado para login no futuro -->
+      <div class="right-header">
+      </div>
+    </div>
+  </header>
+  
+  <div class="ata-container">
+    <h2>Ata da Reunião Sacramental</h2>
+  
+    <form>
+      <label for="boasVindas">Boas Vindas:</label>
+      <input id="boasVindas" name="boasVindas" [(ngModel)]="ata.boasVindas" placeholder="Quem deu as boas-vindas?" />
+  
+      <label for="presididaPor">Presidida Por:</label>
+      <input id="presididaPor" name="presididaPor" [(ngModel)]="ata.presididaPor" placeholder="Quem presidiu a reunião?" />
+  
+      <label for="dirigidaPor">Dirigida Por:</label>
+      <input id="dirigidaPor" name="dirigidaPor" [(ngModel)]="ata.dirigidaPor" placeholder="Quem dirigiu a reunião?" />
+  
+      <label for="anuncios">Anúncios:</label>
+      <textarea id="anuncios" name="anuncios" [(ngModel)]="ata.anuncios" placeholder="Insira os anúncios realizados."></textarea>
+  
+      <label for="primeiroHino">Primeiro Hino:</label>
+      <input id="primeiroHino" name="primeiroHino" [(ngModel)]="ata.primeiroHino" placeholder="Título ou número do hino" />
+  
+      <label for="primeiraOracao">Primeira Oração:</label>
+      <input id="primeiraOracao" name="primeiraOracao" [(ngModel)]="ata.primeiraOracao" placeholder="Quem fez a oração?" />
+  
+      <label for="primeiroOrador">Primeiro Orador:</label>
+      <input id="primeiroOrador" name="primeiroOrador" [(ngModel)]="ata.primeiroOrador" placeholder="Nome do orador" />
+  
+      <label for="hinoIntermediario">Hino Intermediário/Especial:</label>
+      <input id="hinoIntermediario" name="hinoIntermediario" [(ngModel)]="ata.hinoIntermediario" placeholder="Título ou número do hino" />
+  
+      <label for="ultimoOrador">Último Orador:</label>
+      <input id="ultimoOrador" name="ultimoOrador" [(ngModel)]="ata.ultimoOrador" placeholder="Nome do orador final" />
+  
+      <label for="ultimaOracao">Última Oração:</label>
+      <input id="ultimaOracao" name="ultimaOracao" [(ngModel)]="ata.ultimaOracao" placeholder="Quem fez a última oração?" />
+  
+      <button type="submit">Salvar Ata</button>
+    </form>
+  </div>
+  

@@ -13,10 +13,8 @@
         <a routerLink="/ala" routerLinkActive="active">Ala</a>
       </nav>
   
-      <!-- Direita (reservado, pode ser para login futuramente) -->
-      <div class="right-header">
-        <!-- Ex: <button>Login</button> -->
-      </div>
+      <!-- reservado, pode ser para login futuramente -->
+      <div class="right-header"></div>
     </div>
   </header>
   
@@ -42,16 +40,16 @@
         </label>
   
         <label>
-          <span>Responsável</span>
+          <span>Lider</span>
           <select>
             <option>Selecionar Responsável</option>
           </select>
         </label>
   
         <button>Buscar</button>
-
+  
         <p class="versiculo">"Pois todas as coisas na igreja devem ser feitas em ordem e de comum acordo e pela oração da fé."</p>
-            <p class="escritura">D&C 28:13</p>
+        <p class="escritura">D&C 28:13</p>
       </aside>
   
       <!-- Lista de atas -->
@@ -61,19 +59,19 @@
           <div class="conteudo">
             <h3>Reunião Sacramental</h3>
             <p class="data">21 abril 2024 <span class="tipo">Sacramental</span></p>
-            <p class="descricao">Ata da reunião sacramental com discursos sobre fé e arrependimento.</p>
+            <p class="descricao">Ata da reunião sacramental.</p>
           </div>
-          <button class="ver-ata">Ver Ata</button>
+          <a routerLink="/ver-ata" class="ver-ata">Ver Ata</a>
         </div>
   
         <div class="ata-card">
           <div class="icone">👥</div>
           <div class="conteudo">
-            <h3>Reunião da Presidência</h3>
+            <h3>Reunião de Conselho</h3>
             <p class="data">18 abril 2024 <span class="tipo">Presidência</span></p>
             <p class="descricao">Discussão das metas e planejamento de atividades futuras da ala.</p>
           </div>
-          <button class="ver-ata">Ver Ata</button>
+          <a routerLink="/ver-ata" class="ver-ata">Ver Ata</a>
         </div>
   
         <div class="ata-card">
@@ -83,6 +81,7 @@
             <p class="data">14 abril 2024 <span class="tipo">Sociedade de Socorro</span></p>
             <p class="descricao">Debate sobre serviço comunitário e apoio de famílias carentes.</p>
           </div>
+          <a routerLink="/ver-ata" class="ver-ata">Ver Ata</a>
         </div>
   
         <div class="ata-card">
@@ -92,7 +91,7 @@
             <p class="data">7 abril 2024 <span class="tipo">Escola Dominical</span></p>
             <p class="descricao">Resumo das lições e discussões sobre as escrituras.</p>
           </div>
-          <button class="ver-ata">Ver Ata</button>
+          <a routerLink="/ver-ata" class="ver-ata">Ver Ata</a>
         </div>
       </section>
     </div>

@@ -188,16 +188,34 @@
   }
   
   .ver-ata {
+    display: inline-block;
+    background-color: #0057b7;
+    color: white;
     padding: 0.5rem 1rem;
-    border: 1px solid #aaa;
-    background: white;
     border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.2s ease;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
   }
   
   .ver-ata:hover {
-    background: #f0f0f0;
+    background-color: #003f8a;
   }
   
+  .versiculo {
+    font-style: italic;
+    font-size: 20px;
+    color: #333;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .escritura {
+    font-size: 20px;
+    color: #000000;
+    margin-top: 0.3rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
   
