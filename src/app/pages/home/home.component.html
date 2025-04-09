@@ -1,0 +1,78 @@
+<header>
+    <div class="nav-container">
+      <!-- LOGO E TÍTULO -->
+      <div class="left-header">
+        <h2>Projeto Ata</h2>
+      </div>
+  
+      <!-- MENU DE NAVEGAÇÃO -->
+      <nav class="nav-menu">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
+        <a routerLink="/mensagens" routerLinkActive="active">Mensagens</a>
+        <a routerLink="/atas" routerLinkActive="active">Atas</a>
+        <a routerLink="/ala" routerLinkActive="active">Ala</a>
+      </nav>
+  
+      <!-- ÁREA DE LOGIN -->
+      <div class="login-form">
+        <p class="login-title">Área do Bispado</p>
+        <input type="text" placeholder="Usuário" />
+        <input type="password" placeholder="Senha" />
+        <button type="button">Entrar</button>
+      </div>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <h1>Mensagem Teste - Projeto Ata</h1>
+  </section>
+  
+  <!-- SEÇÃO DE NOTÍCIAS -->
+  <main class="noticias-container">
+    <h2 class="titulo-principal">Notícias da Igreja no Mundo</h2>
+  
+    <div class="cards-grid">
+      <div class="card">
+        <div class="icone">👷</div>
+        <h3>A Construção de um Templo no Haiti Progride</h3>
+        <p>A construção do templo em Porto Príncipe continua com avanços significativos.</p>
+        <button class="btn-ver">VER</button>
+      </div>
+  
+      <div class="card">
+        <div class="icone">🙏</div>
+        <h3>Iniciativa de Jejum e Oração para a Paz</h3>
+        <p>Convite para membros participarem de um dia de jejum e oração pela paz.</p>
+        <button class="btn-ver">VER</button>
+      </div>
+  
+      <div class="card">
+        <div class="icone">👥</div>
+        <h3>Voluntários da Igreja Ajudam em Catástrofes Naturais</h3>
+        <p>Relato de serviços humanitários realizados após recentes desastres naturais.</p>
+        <button class="btn-ver">VER</button>
+      </div>
+  
+      <div class="card">
+        <div class="icone">🗓️</div>
+        <h3>Atas do Mundo</h3>
+        <p>Agenda das atividades da Igreja e das autoridades gerais ao redor do globo.</p>
+        <button class="btn-ver">VER</button>
+      </div>
+    </div>
+  </main>
+  
+  <section class="section">
+    <div class="cards">
+      <!-- ... seus cards ... -->
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Projeto Ata. Todos os direitos reservados.</p>
+    <div>
+      <a href="#">Política de Privacidade</a> |
+      <a href="#">Termos de Uso</a>
+    </div>
+  </footer>
+  

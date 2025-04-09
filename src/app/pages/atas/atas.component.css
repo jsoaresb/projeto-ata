@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  header {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+  
+  .left-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .right-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .nav-menu a {
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  .nav-menu a:hover {
+    background-color: #e6f0ff;
+    color: #000;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .nav-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .left-header,
+    .nav-menu,
+    .right-header {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .nav-menu {
+      flex-wrap: wrap;
+    }
+  
+    .nav-menu a {
+      margin: 0 10px;
+      font-size: 0.9rem;
+    }
+  }
+  .atas-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .atas-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  .atas-layout {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .filtros {
+    flex: 1;
+    min-width: 250px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .filtros label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .filtros select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .filtros button {
+    padding: 10px;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filtros button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .lista-atas {
+    flex: 3;
+    display: grid;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  
+  .ata-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .ata-card .icone {
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+  
+  .ata-card .conteudo {
+    flex: 1;
+  }
+  
+  .ata-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .ata-card .data {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .ata-card .data .tipo {
+    margin-left: 0.5rem;
+    color: #999;
+  }
+  
+  .ata-card .descricao {
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .ver-ata {
+    padding: 0.5rem 1rem;
+    border: 1px solid #aaa;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .ver-ata:hover {
+    background: #f0f0f0;
+  }
+  
+  
