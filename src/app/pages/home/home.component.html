@@ -1,78 +1,82 @@
 <header>
-    <div class="nav-container">
-      <!-- LOGO E TÍTULO -->
-      <div class="left-header">
-        <h2>Projeto Ata</h2>
-      </div>
-  
-      <!-- MENU DE NAVEGAÇÃO -->
-      <nav class="nav-menu">
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
-        <a routerLink="/mensagens" routerLinkActive="active">Mensagens</a>
-        <a routerLink="/atas" routerLinkActive="active">Atas</a>
-        <a routerLink="/ala" routerLinkActive="active">Ala</a>
-      </nav>
-  
-      <!-- ÁREA DE LOGIN -->
-      <div class="login-form">
-        <p class="login-title">Área do Bispado</p>
-        <input type="text" placeholder="Usuário" />
-        <input type="password" placeholder="Senha" />
-        <button type="button">Entrar</button>
-      </div>
+  <div class="nav-container">
+    <!-- LOGO E TÍTULO -->
+    <div class="left-header">
+      <h2>Projeto Ata</h2>
     </div>
-  </header>
-  
-  <section class="hero">
-    <h1>Mensagem Teste - Projeto Ata</h1>
-  </section>
-  
-  <!-- SEÇÃO NOTÍCIAS -->
-  <main class="noticias-container">
-    <h2 class="titulo-principal">Notícias da Igreja no Mundo</h2>
-  
-    <div class="cards-grid">
-      <div class="card">
-        <div class="icone">👷</div>
-        <h3>Datas de Dedicação dos Templos no Mundo</h3>
-        <p>Veja aqui quando os templos serão dedicados.</p>
-        <button class="btn-ver">VER</button>
-      </div>
-  
-      <div class="card">
-        <div class="icone">🙏</div>
-        <h3>Jejum Mundial da Igreja</h3>
-        <p>Convite para membros participarem de um dia de jejum e oração.</p>
-        <button class="btn-ver">VER</button>
-      </div>
-  
-      <div class="card">
-        <div class="icone">👥</div>
-        <h3>Mãos que Ajudam</h3>
-        <p>Relato de serviços humanitários realizados após recentes desastres naturais.</p>
-        <button class="btn-ver">VER</button>
-      </div>
-  
-      <div class="card">
-        <div class="icone">🗓️</div>
-        <h3>Atas do Mundo</h3>
-        <p>Agenda das atividades da Igreja e das autoridades gerais ao redor do globo.</p>
-        <button class="btn-ver">VER</button>
-      </div>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav class="nav-menu">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
+      <a routerLink="/mensagens" routerLinkActive="active">Mensagens</a>
+      <a routerLink="/atas" routerLinkActive="active">Atas</a>
+      <a routerLink="/ala" routerLinkActive="active">Ala</a>
+    </nav>
+
+    <!-- ÁREA DE LOGIN -->
+    <div class="login-form">
+      <p class="login-title">Área do Bispado</p>
+      <input type="text" placeholder="Usuário" />
+      <input type="password" placeholder="Senha" />
+      <button type="button">Entrar</button>
     </div>
-  </main>
-  
-  <section class="section">
-    <div class="cards">
-      <!-- ... cards ... -->
+  </div>
+</header>
+
+<!-- HERO MAIS VISUAL E IMPACTANTE -->
+<section class="hero">
+  <div class="overlay">
+    <h1>Bem-vindo ao Projeto Ata</h1>
+    <p>Organize, registre e compartilhe suas reuniões com facilidade.</p>
+    <button class="btn-acao">Começar agora</button>
+  </div>
+</section>
+
+<!-- SEÇÃO NOTÍCIAS -->
+<main class="noticias-container">
+  <h2 class="titulo-principal">Notícias da Igreja no Mundo</h2>
+
+  <div class="cards-grid">
+    <div class="card">
+      <div class="icone">👷</div>
+      <h3>Datas de Dedicação dos Templos no Mundo</h3>
+      <p>Veja aqui quando os templos serão dedicados.</p>
+      <button class="btn-ver">VER</button>
     </div>
-  </section>
-  
-  <footer>
-    <p>&copy; 2025 Projeto Ata. Todos os direitos reservados.</p>
-    <div>
-      <a href="#">Política de Privacidade</a> |
-      <a href="#">Termos de Uso</a>
+
+    <div class="card">
+      <div class="icone">🙏</div>
+      <h3>Jejum Mundial da Igreja</h3>
+      <p>Convite para membros participarem de um dia de jejum e oração.</p>
+      <button class="btn-ver">VER</button>
     </div>
-  </footer>
-  
+
+    <div class="card">
+      <div class="icone">👥</div>
+      <h3>Mãos que Ajudam</h3>
+      <p>Relato de serviços humanitários realizados após recentes desastres naturais.</p>
+      <button class="btn-ver">VER</button>
+    </div>
+
+    <div class="card">
+      <div class="icone">🗓️</div>
+      <h3>Atas do Mundo</h3>
+      <p>Agenda das atividades da Igreja e das autoridades gerais ao redor do globo.</p>
+      <button class="btn-ver">VER</button>
+    </div>
+  </div>
+</main>
+
+<section class="section">
+  <div class="cards">
+    <!-- ... cards ... -->
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Projeto Ata. Todos os direitos reservados.</p>
+  <div>
+    <a href="#">Política de Privacidade</a> |
+    <a href="#">Termos de Uso</a>
+  </div>
+</footer>

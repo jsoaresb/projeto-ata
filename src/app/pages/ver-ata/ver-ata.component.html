@@ -1,59 +1,131 @@
 <header>
-    <div class="nav-container">
-      <!-- Esquerda -->
-      <div class="left-header">
-        <h2>Projeto Ata</h2>
-      </div>
-  
-      <!-- Centro: navegação -->
-      <nav class="nav-menu">
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
-        <a routerLink="/mensagens" routerLinkActive="active">Mensagens</a>
-        <a routerLink="/atas" routerLinkActive="active">Atas</a>
-        <a routerLink="/ala" routerLinkActive="active">Ala</a>
-      </nav>
-  
-      <!-- Reservado para login no futuro -->
-      <div class="right-header">
-      </div>
+  <div class="nav-container">
+    <div class="left-header">
+      <h2>Projeto Ata</h2>
     </div>
-  </header>
-  
-  <div class="ata-container">
-    <h2>Ata da Reunião Sacramental</h2>
-  
-    <form>
-      <label for="boasVindas">Boas Vindas:</label>
-      <input id="boasVindas" name="boasVindas" [(ngModel)]="ata.boasVindas" placeholder="Quem deu as boas-vindas?" />
-  
-      <label for="presididaPor">Presidida Por:</label>
-      <input id="presididaPor" name="presididaPor" [(ngModel)]="ata.presididaPor" placeholder="Quem presidiu a reunião?" />
-  
-      <label for="dirigidaPor">Dirigida Por:</label>
-      <input id="dirigidaPor" name="dirigidaPor" [(ngModel)]="ata.dirigidaPor" placeholder="Quem dirigiu a reunião?" />
-  
-      <label for="anuncios">Anúncios:</label>
-      <textarea id="anuncios" name="anuncios" [(ngModel)]="ata.anuncios" placeholder="Insira os anúncios realizados."></textarea>
-  
-      <label for="primeiroHino">Primeiro Hino:</label>
-      <input id="primeiroHino" name="primeiroHino" [(ngModel)]="ata.primeiroHino" placeholder="Título ou número do hino" />
-  
-      <label for="primeiraOracao">Primeira Oração:</label>
-      <input id="primeiraOracao" name="primeiraOracao" [(ngModel)]="ata.primeiraOracao" placeholder="Quem fez a oração?" />
-  
-      <label for="primeiroOrador">Primeiro Orador:</label>
-      <input id="primeiroOrador" name="primeiroOrador" [(ngModel)]="ata.primeiroOrador" placeholder="Nome do orador" />
-  
-      <label for="hinoIntermediario">Hino Intermediário/Especial:</label>
-      <input id="hinoIntermediario" name="hinoIntermediario" [(ngModel)]="ata.hinoIntermediario" placeholder="Título ou número do hino" />
-  
-      <label for="ultimoOrador">Último Orador:</label>
-      <input id="ultimoOrador" name="ultimoOrador" [(ngModel)]="ata.ultimoOrador" placeholder="Nome do orador final" />
-  
-      <label for="ultimaOracao">Última Oração:</label>
-      <input id="ultimaOracao" name="ultimaOracao" [(ngModel)]="ata.ultimaOracao" placeholder="Quem fez a última oração?" />
-  
-      <button type="submit">Salvar Ata</button>
-    </form>
+
+    <nav class="nav-menu">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
+      <a routerLink="/mensagens" routerLinkActive="active">Mensagens</a>
+      <a routerLink="/atas" routerLinkActive="active">Atas</a>
+      <a routerLink="/ala" routerLinkActive="active">Ala</a>
+    </nav>
+
+    <div class="right-header">
+      <!-- Área reservada -->
+    </div>
   </div>
-  
+</header>
+
+<div class="ver-ata-layout">
+  <aside class="sidebar esquerda">
+    <h3>Agenda da Reunião</h3>
+    <ul>
+      <li>🔔 Hino de Abertura</li>
+      <li>🙏 Oração Inicial</li>
+      <li>🗣️ Discursos</li>
+      <li>🎵 Hino Intermediário</li>
+      <li>📣 Avisos</li>
+    </ul>
+
+    <h3>Batismos</h3>
+    <ul>
+      <li>✅ Maria Silva</li>
+      <li>✅ Maria Silva</li>
+      <li>✅ Maria Silva</li>
+    </ul>
+
+    <h3>Confirmações</h3>
+    <ul>
+      <li>✅ João da silva</li>
+      <li>✅ João da silva</li>
+      <li>✅ João da silva</li>
+      <li>✅ João da silva</li>
+    </ul>
+  </aside>
+
+  <main class="conteudo-ata">
+    <div class="ata-container" id="conteudo-ata">
+      <h2>Ata da Reunião Sacramental</h2>
+
+      <form>
+        <label for="boasVindas">Boas Vindas:</label>
+        <input id="boasVindas" name="boasVindas" [(ngModel)]="ata.boasVindas" placeholder="Quem deu as boas-vindas?" />
+
+        <label for="presididaPor">Presidida Por:</label>
+        <input id="presididaPor" name="presididaPor" [(ngModel)]="ata.presididaPor" placeholder="Quem presidiu a reunião?" />
+
+        <label for="dirigidaPor">Dirigida Por:</label>
+        <input id="dirigidaPor" name="dirigidaPor" [(ngModel)]="ata.dirigidaPor" placeholder="Quem dirigiu a reunião?" />
+
+        <label for="anuncios">Anúncios:</label>
+        <textarea id="anuncios" name="anuncios" [(ngModel)]="ata.anuncios" placeholder="Insira os anúncios realizados."></textarea>
+
+        <label for="primeiroHino">Primeiro Hino:</label>
+        <input id="primeiroHino" name="primeiroHino" [(ngModel)]="ata.primeiroHino" placeholder="Título ou número do hino" />
+
+        <label for="primeiraOracao">Primeira Oração:</label>
+        <input id="primeiraOracao" name="primeiraOracao" [(ngModel)]="ata.primeiraOracao" placeholder="Quem fez a oração?" />
+
+        <label for="primeiroOrador">Primeiro Orador:</label>
+        <input id="primeiroOrador" name="primeiroOrador" [(ngModel)]="ata.primeiroOrador" placeholder="Nome do orador" />
+
+        <label for="hinoIntermediario">Hino Intermediário/Especial:</label>
+        <input id="hinoIntermediario" name="hinoIntermediario" [(ngModel)]="ata.hinoIntermediario" placeholder="Título ou número do hino" />
+
+        <label for="ultimoOrador">Último Orador:</label>
+        <input id="ultimoOrador" name="ultimoOrador" [(ngModel)]="ata.ultimoOrador" placeholder="Nome do orador final" />
+
+        <label for="ultimaOracao">Última Oração:</label>
+        <input id="ultimaOracao" name="ultimaOracao" [(ngModel)]="ata.ultimaOracao" placeholder="Quem fez a última oração?" />
+
+        <button type="submit">Salvar Ata</button>
+      </form>
+
+      <!-- Área de anotações rápidas -->
+      <section class="notas-container">
+        <h3>Anotações</h3>
+        <textarea [(ngModel)]="notaTexto" name="notaTexto" placeholder="Escreva suas anotações aqui..."></textarea>
+        <button type="button" (click)="salvarNota()">Salvar Anotações</button>
+        <p *ngIf="mensagemSalvo" class="mensagem-sucesso">✔ Anotação salva!</p>
+      </section>
+    </div>
+  </main>
+
+  <aside class="sidebar direita">
+    <h3>Versículo do Dia</h3>
+    <blockquote>“Eu sou o caminho, e a verdade e a vida.” – João 14:6</blockquote>
+
+    <h3>Atas Anteriores</h3>
+    <ul>
+      <li><a href="#">31/03/2025</a></li>
+      <li><a href="#">24/03/2025</a></li>
+      <li><a href="#">17/03/2025</a></li>
+    </ul>
+
+    <h3>Aniversariantes</h3>
+    <ul>
+      <li>🎂 João da Silva – 09/04</li>
+      <li>🎂 Maria da Silva – 12/04</li>
+    </ul>
+  </aside>
+</div>
+
+<!-- Botão Flutuante Interativo -->
+<div class="fab-container" (mouseenter)="showSubButtons = true" (mouseleave)="showSubButtons = false">
+  <button class="fab main" title="Ações">
+    <i data-lucide="plus"></i>
+  </button>
+
+  <div class="sub-buttons" [class.show]="showSubButtons">
+    <button class="fab sub" title="Nova Ata">
+      <i data-lucide="file-plus"></i>
+    </button>
+    <button class="fab sub" title="Exportar">
+      <i data-lucide="file-output"></i>
+    </button>
+    <button class="fab sub" title="Imprimir" (click)="imprimirPDF()">
+      <i data-lucide="printer"></i>
+    </button>
+  </div>
+</div>

@@ -1,99 +1,107 @@
-<header>
-    <div class="nav-container">
-      <!-- Esquerda -->
-      <div class="left-header">
-        <h2>Projeto Ata</h2>
-      </div>
-  
-      <!-- Centro: navegação -->
-      <nav class="nav-menu">
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
-        <a routerLink="/mensagens" routerLinkActive="active">Mensagens</a>
-        <a routerLink="/atas" routerLinkActive="active">Atas</a>
-        <a routerLink="/ala" routerLinkActive="active">Ala</a>
-      </nav>
-  
-      <!-- reservado, pode ser para login futuramente -->
-      <div class="right-header"></div>
+<header class="header-com-pesquisa">
+  <div class="nav-container">
+    <!-- Esquerda -->
+    <div class="left-header">
+      <h2>Projeto Ata</h2>
     </div>
-  </header>
-  
-  <!-- Conteúdo das Atas -->
-  <div class="atas-container">
-    <h1>Atas de Reuniões</h1>
-  
-    <div class="atas-layout">
-      <!-- Filtros -->
-      <aside class="filtros">
-        <label>
-          <span>Data</span>
-          <select>
-            <option>Selecionar Data</option>
-          </select>
-        </label>
-  
-        <label>
-          <span>Tipo de Reunião</span>
-          <select>
-            <option>Selecionar Tipo</option>
-          </select>
-        </label>
-  
-        <label>
-          <span>Lider</span>
-          <select>
-            <option>Selecionar Responsável</option>
-          </select>
-        </label>
-  
-        <button>Buscar</button>
-  
-        <p class="versiculo">"Pois todas as coisas na igreja devem ser feitas em ordem e de comum acordo e pela oração da fé."</p>
-        <p class="escritura">D&C 28:13</p>
-      </aside>
-  
-      <!-- Lista de atas -->
-      <section class="lista-atas">
-        <div class="ata-card">
-          <div class="icone">⛪</div>
-          <div class="conteudo">
-            <h3>Reunião Sacramental</h3>
-            <p class="data">21 abril 2024 <span class="tipo">Sacramental</span></p>
-            <p class="descricao">Ata da reunião sacramental.</p>
-          </div>
-          <a routerLink="/ver-ata" class="ver-ata">Ver Ata</a>
-        </div>
-  
-        <div class="ata-card">
-          <div class="icone">👥</div>
-          <div class="conteudo">
-            <h3>Reunião de Conselho</h3>
-            <p class="data">18 abril 2024 <span class="tipo">Presidência</span></p>
-            <p class="descricao">Discussão das metas e planejamento de atividades futuras da ala.</p>
-          </div>
-          <a routerLink="/ver-ata" class="ver-ata">Ver Ata</a>
-        </div>
-  
-        <div class="ata-card">
-          <div class="icone">🧕</div>
-          <div class="conteudo">
-            <h3>Reunião da Sociedade de Socorro</h3>
-            <p class="data">14 abril 2024 <span class="tipo">Sociedade de Socorro</span></p>
-            <p class="descricao">Debate sobre serviço comunitário e apoio de famílias carentes.</p>
-          </div>
-          <a routerLink="/ver-ata" class="ver-ata">Ver Ata</a>
-        </div>
-  
-        <div class="ata-card">
-          <div class="icone">👥</div>
-          <div class="conteudo">
-            <h3>Reunião da Escola Dominical</h3>
-            <p class="data">7 abril 2024 <span class="tipo">Escola Dominical</span></p>
-            <p class="descricao">Resumo das lições e discussões sobre as escrituras.</p>
-          </div>
-          <a routerLink="/ver-ata" class="ver-ata">Ver Ata</a>
-        </div>
-      </section>
+
+    <!-- Centro: navegação -->
+    <nav class="nav-menu">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
+      <a routerLink="/mensagens" routerLinkActive="active">Mensagens</a>
+      <a routerLink="/atas" routerLinkActive="active">Atas</a>
+      <a routerLink="/ala" routerLinkActive="active">Ala</a>
+    </nav>
+
+    <!-- Direita: barra de pesquisa -->
+    <div class="right-header">
+      <input
+        type="text"
+        placeholder="Pesquisar..."
+        [(ngModel)]="searchTerm"
+        class="search-input"
+      />
     </div>
   </div>
-  
+</header>
+
+<!-- Conteúdo das Atas -->
+<div class="atas-container">
+  <h1>Atas de Reuniões</h1>
+
+  <div class="atas-layout">
+    <!-- Filtros -->
+    <aside class="filtros">
+      <label>
+        <span>Data</span>
+        <select>
+          <option>Selecionar Data</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Tipo de Reunião</span>
+        <select>
+          <option>Selecionar Tipo</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Lider</span>
+        <select>
+          <option>Selecionar Responsável</option>
+        </select>
+      </label>
+
+      <button>Buscar</button>
+
+      <p class="versiculo">
+        "Pois todas as coisas na igreja devem ser feitas em ordem e de comum acordo e pela oração da fé."
+      </p>
+      <p class="escritura">D&C 28:13</p>
+    </aside>
+
+    <!-- Lista de atas -->
+    <section class="lista-atas">
+      <div class="ata-card">
+        <div class="icone">⛪</div>
+        <div class="conteudo">
+          <h3>Reunião Sacramental</h3>
+          <p class="data">21 abril 2024 <span class="tipo">Sacramental</span></p>
+          <p class="descricao">Ata da reunião sacramental.</p>
+        </div>
+        <a routerLink="/ver-ata" class="ver-ata">Ver Ata</a>
+      </div>
+
+      <div class="ata-card">
+        <div class="icone">👥</div>
+        <div class="conteudo">
+          <h3>Reunião de Conselho</h3>
+          <p class="data">18 abril 2024 <span class="tipo">Presidência</span></p>
+          <p class="descricao">Discussão das metas e planejamento de atividades futuras da ala.</p>
+        </div>
+        <a routerLink="/ver-ata" class="ver-ata">Ver Ata</a>
+      </div>
+
+      <div class="ata-card">
+        <div class="icone">🧕</div>
+        <div class="conteudo">
+          <h3>Reunião da Sociedade de Socorro</h3>
+          <p class="data">14 abril 2024 <span class="tipo">Sociedade de Socorro</span></p>
+          <p class="descricao">Debate sobre serviço comunitário e apoio de famílias carentes.</p>
+        </div>
+        <a routerLink="/ver-ata" class="ver-ata">Ver Ata</a>
+      </div>
+
+      <div class="ata-card">
+        <div class="icone">👥</div>
+        <div class="conteudo">
+          <h3>Reunião da Escola Dominical</h3>
+          <p class="data">7 abril 2024 <span class="tipo">Escola Dominical</span></p>
+          <p class="descricao">Resumo das lições e discussões sobre as escrituras.</p>
+        </div>
+        <a routerLink="/ver-ata" class="ver-ata">Ver Ata</a>
+      </div>
+    </section>
+  </div>
+</div>
