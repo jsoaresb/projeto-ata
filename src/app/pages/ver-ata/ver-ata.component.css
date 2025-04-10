@@ -6,7 +6,18 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideInFade 1s ease-out forwards;
 }
+
+@keyframes slideInFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .nav-container {
   display: flex;

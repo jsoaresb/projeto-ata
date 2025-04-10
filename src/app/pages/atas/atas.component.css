@@ -12,7 +12,17 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    opacity: 0;
+  transform: translateY(-20px);
+  animation: slideInFade 1s ease-out forwards;
+}
+
+@keyframes slideInFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
   
   .nav-container {
     max-width: 1200px;
